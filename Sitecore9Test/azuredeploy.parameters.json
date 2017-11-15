@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "deploymentId": {
+      "value": ""
+    },
+    "location": {
+      "value": "SitecoreASE(East US)"
+    },
+    "sitecoreAdminPassword": {
+      "value": "Welcome.1234"
+    },
+    "licenseXml": {
+      "value": ""
+    },
+    "repAuthenticationApiKey": {
+      "value": "96080674-3d48-4e53-9d20-93c9a2fb6785"
+    },
+    "sqlServerLogin": {
+      "value": "sitecoreadmin"
+    },
+    "sqlServerPassword": {
+      "value": "Welcome.1234"
+    },
+    "cmMsDeployPackageUrl": {
+      "value": "https://sitecoretest1234.blob.core.windows.net/sitecore90xp/Sitecore%209.0.0%20rev.%20171002%20(WDP%20XPScaled%20packages)/Sitecore%209.0.0%20rev.%20171002%20(Cloud)_cm.scwdp.zip?st=2017-11-09T08%3A08%3A00Z&se=2017-12-10T08%3A08%3A00Z&sp=rl&sv=2017-04-17&sr=c&sig=37vTJE%2FOMuFn7oYw3ub41yaR70PMnybEHPN22whzcIw%3D"
+    },
+    "cdMsDeployPackageUrl": {
+      "value": "https://sitecoretest1234.blob.core.windows.net/sitecore90xp/Sitecore%209.0.0%20rev.%20171002%20(WDP%20XPScaled%20packages)/Sitecore%209.0.0%20rev.%20171002%20(Cloud)_cd.scwdp.zip?st=2017-11-09T08%3A08%3A00Z&se=2017-12-10T08%3A08%3A00Z&sp=rl&sv=2017-04-17&sr=c&sig=37vTJE%2FOMuFn7oYw3ub41yaR70PMnybEHPN22whzcIw%3D"
+    },
+    "prcMsDeployPackageUrl": {
+      "value": "https://sitecoretest1234.blob.core.windows.net/sitecore90xp/Sitecore%209.0.0%20rev.%20171002%20(WDP%20XPScaled%20packages)/Sitecore%209.0.0%20rev.%20171002%20(Cloud)_prc.scwdp.zip?st=2017-11-09T08%3A08%3A00Z&se=2017-12-10T08%3A08%3A00Z&sp=rl&sv=2017-04-17&sr=c&sig=37vTJE%2FOMuFn7oYw3ub41yaR70PMnybEHPN22whzcIw%3D"
+    },
+    "repMsDeployPackageUrl": {
+      "value": "https://sitecoretest1234.blob.core.windows.net/sitecore90xp/Sitecore%209.0.0%20rev.%20171002%20(WDP%20XPScaled%20packages)/Sitecore%209.0.0%20rev.%20171002%20(Cloud)_rep.scwdp.zip?st=2017-11-09T08%3A08%3A00Z&se=2017-12-10T08%3A08%3A00Z&sp=rl&sv=2017-04-17&sr=c&sig=37vTJE%2FOMuFn7oYw3ub41yaR70PMnybEHPN22whzcIw%3D"
+    },
+    "xcRefDataMsDeployPackageUrl": {
+      "value": "https://sitecoretest1234.blob.core.windows.net/sitecore90xp/Sitecore%209.0.0%20rev.%20171002%20(WDP%20XPScaled%20packages)/Sitecore%209.0.0%20rev.%20171002%20(Cloud)_xp1referencedata.scwdp.zip?st=2017-11-09T08%3A08%3A00Z&se=2017-12-10T08%3A08%3A00Z&sp=rl&sv=2017-04-17&sr=c&sig=37vTJE%2FOMuFn7oYw3ub41yaR70PMnybEHPN22whzcIw%3D"
+    },
+    "xcCollectMsDeployPackageUrl": {
+      "value": "https://sitecoretest1234.blob.core.windows.net/sitecore90xp/Sitecore%209.0.0%20rev.%20171002%20(WDP%20XPScaled%20packages)/Sitecore%209.0.0%20rev.%20171002%20(Cloud)_xp1collection.scwdp.zip?st=2017-11-09T08%3A08%3A00Z&se=2017-12-10T08%3A08%3A00Z&sp=rl&sv=2017-04-17&sr=c&sig=37vTJE%2FOMuFn7oYw3ub41yaR70PMnybEHPN22whzcIw%3D"
+    },
+    "xcSearchMsDeployPackageUrl": {
+      "value": "https://sitecoretest1234.blob.core.windows.net/sitecore90xp/Sitecore%209.0.0%20rev.%20171002%20(WDP%20XPScaled%20packages)/Sitecore%209.0.0%20rev.%20171002%20(Cloud)_xp1collectionsearch.scwdp.zip?st=2017-11-09T08%3A08%3A00Z&se=2017-12-10T08%3A08%3A00Z&sp=rl&sv=2017-04-17&sr=c&sig=37vTJE%2FOMuFn7oYw3ub41yaR70PMnybEHPN22whzcIw%3D"
+    },
+    "maOpsMsDeployPackageUrl": {
+      "value": "https://sitecoretest1234.blob.core.windows.net/sitecore90xp/Sitecore%209.0.0%20rev.%20171002%20(WDP%20XPScaled%20packages)/Sitecore%209.0.0%20rev.%20171002%20(Cloud)_xp1marketingautomation.scwdp.zip?st=2017-11-09T08%3A08%3A00Z&se=2017-12-10T08%3A08%3A00Z&sp=rl&sv=2017-04-17&sr=c&sig=37vTJE%2FOMuFn7oYw3ub41yaR70PMnybEHPN22whzcIw%3D"
+    },
+    "maRepMsDeployPackageUrl": {
+      "value": "https://sitecoretest1234.blob.core.windows.net/sitecore90xp/Sitecore%209.0.0%20rev.%20171002%20(WDP%20XPScaled%20packages)/Sitecore%209.0.0%20rev.%20171002%20(Cloud)_xp1marketingautomationreporting.scwdp.zip?st=2017-11-09T08%3A08%3A00Z&se=2017-12-10T08%3A08%3A00Z&sp=rl&sv=2017-04-17&sr=c&sig=37vTJE%2FOMuFn7oYw3ub41yaR70PMnybEHPN22whzcIw%3D"
+    },
+    "authCertificateBlob": {
+      "value": ""
+    },
+    "authCertificatePassword": {
+      "value": "Welcome.1234"
+    }
+  }
+}
