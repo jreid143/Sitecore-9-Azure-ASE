@@ -8,6 +8,9 @@
     "location": {
       "value": "SitecoreASE(East US)"
     },
+    "appServiceEnvironmentName": {
+      "value": "Sitecore-ase"
+    },
     "sitecoreAdminPassword": {
       "value": "Welcome.1234"
     },
