@@ -9,7 +9,7 @@
       "value": "East US"
     },
     "appServiceEnvironmentName": {
-      "value": "Sitecore-ase"
+      "value": "sitecore-ase"
     },
     "sitecoreAdminPassword": {
       "value": "Welcome.1234"

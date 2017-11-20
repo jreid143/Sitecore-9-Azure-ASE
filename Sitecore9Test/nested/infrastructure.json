@@ -147,6 +147,10 @@
       "minLength": 1,
       "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
     },
+    "redisCacheSubnetID": {
+      "type": "string",
+      "defaultValue": "redis-ase-subnet"
+    },
     "applicationInsightsName": {
       "type": "string",
       "minLength": 1,
@@ -278,8 +282,8 @@
             "Replicas": 1
           },
           "redisCache": {
-            "SkuName": "Standard",
-            "SkuFamily": "C",
+            "SkuName": "Premium",
+            "SkuFamily": "P",
             "SkuCapacity": 1
           },
           "applicationInsightsPricePlan": {
@@ -416,8 +420,8 @@
             "Replicas": 1
           },
           "redisCache": {
-            "SkuName": "Standard",
-            "SkuFamily": "C",
+            "SkuName": "Premium",
+            "SkuFamily": "P",
             "SkuCapacity": 1
           },
           "applicationInsightsPricePlan": {
@@ -433,7 +437,7 @@
             "SkuCapacity": 1
           },
           "cdHostingPlan": {
-            "SkuName": "S3",
+            "SkuName": "I3",
             "SkuCapacity": 4
           },
           "prcHostingPlan": {
@@ -485,8 +489,8 @@
             "Replicas": 1
           },
           "redisCache": {
-            "SkuName": "Standard",
-            "SkuFamily": "C",
+            "SkuName": "Premium",
+            "SkuFamily": "P",
             "SkuCapacity": 1
           },
           "applicationInsightsPricePlan": {
@@ -554,8 +558,8 @@
             "Replicas": 1
           },
           "redisCache": {
-            "SkuName": "Standard",
-            "SkuFamily": "C",
+            "SkuName": "Premium",
+            "SkuFamily": "P",
             "SkuCapacity": 2
           },
           "applicationInsightsPricePlan": {
@@ -1026,6 +1030,7 @@
         },
         "enableNonSslPort": false
       },
+      "subnetId": "[parameters('redisCacheSubnetID')]",
       "tags": {
         "provider": "[variables('sitecoreTags').provider]"
       }
