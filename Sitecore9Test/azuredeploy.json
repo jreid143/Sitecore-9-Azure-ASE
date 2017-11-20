@@ -265,7 +265,7 @@
       "minLength": 1,
       "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
     },
-    "redisCacheSubnetID": {
+    "redisCacheSubnetName": {
       "type": "string",
       "defaultValue": "redis-ase-subnet"
     },
@@ -527,8 +527,8 @@
           "redisCacheName": {
             "value": "[parameters('redisCacheName')]"
           },
-          "redisCacheSubnetID": {
-            "value": "[parameters('redisCacheSubnetID')]"
+          "redisCacheSubnetName": {
+            "value": "[parameters('redisCacheSubnetName')]"
           },
           "applicationInsightsName": {
             "value": "[parameters('applicationInsightsName')]"

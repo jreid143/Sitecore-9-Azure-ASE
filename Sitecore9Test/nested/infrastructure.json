@@ -147,7 +147,7 @@
       "minLength": 1,
       "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
     },
-    "redisCacheSubnetID": {
+    "redisCacheSubnetName": {
       "type": "string",
       "defaultValue": "redis-ase-subnet"
     },
@@ -1030,7 +1030,7 @@
         },
         "enableNonSslPort": false
       },
-      "subnetId": "[parameters('redisCacheSubnetID')]",
+      "subnet": "[parameters('redisCacheSubnetName')]",
       "tags": {
         "provider": "[variables('sitecoreTags').provider]"
       }
