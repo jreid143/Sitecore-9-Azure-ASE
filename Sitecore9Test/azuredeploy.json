@@ -53,7 +53,7 @@
     },
     "virtualNetwork": {
       "type": "string",
-      "defaultValue": "sitecore-vnet"
+      "defaultValue": "sitecore-ase-vnet"
     },
     "sitecoreAdminPassword": {
       "type": "securestring",
