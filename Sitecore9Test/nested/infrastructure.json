@@ -56,6 +56,10 @@
       "type": "string",
       "defaultValue": "[resourceGroup().name]"
     },
+    "virtualNetwork": {
+      "type": "string",
+      "defaultValue": "sitecore-vnet"
+    },
     "location": {
       "type": "string",
       "minLength": 1,
@@ -351,8 +355,8 @@
             "Replicas": 1
           },
           "redisCache": {
-            "SkuName": "Standard",
-            "SkuFamily": "C",
+            "SkuName": "Premium",
+            "SkuFamily": "P",
             "SkuCapacity": 1
           },
           "applicationInsightsPricePlan": {
@@ -1028,7 +1032,9 @@
           "family": "[parameters('resourceSizes').redisCache.SkuFamily]",
           "capacity": "[parameters('resourceSizes').redisCache.SkuCapacity]"
         },
-        "enableNonSslPort": false
+        "enableNonSslPort": false,
+        "subnet": "[parameters('redisCacheSubnetName')]",
+        "virtualNetwork": "[parameters('virtualNetwork')]"
       },
 
       "tags": {
