@@ -265,6 +265,10 @@
       "minLength": 1,
       "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
     },
+    "redisCacheSubnetID": {
+      "type": "string",
+      "defaultValue": "redis-ase-subnet"
+    },
     "searchServiceName": {
       "type": "string",
       "minLength": 1,
@@ -474,100 +478,103 @@
             "value": "[parameters('appServiceEnvironmentName')]"
           },
 
-        "sitecoreSKU": {
-          "value": "[parameters('sitecoreSKU')]"
-        },
+          "sitecoreSKU": {
+            "value": "[parameters('sitecoreSKU')]"
+          },
 
-        "sqlServerName": {
-          "value": "[parameters('sqlServerName')]"
-        },
-        "sqlServerLogin": {
-          "value": "[parameters('sqlServerLogin')]"
-        },
-        "sqlServerPassword": {
-          "value": "[parameters('sqlServerPassword')]"
-        },
+          "sqlServerName": {
+            "value": "[parameters('sqlServerName')]"
+          },
+          "sqlServerLogin": {
+            "value": "[parameters('sqlServerLogin')]"
+          },
+          "sqlServerPassword": {
+            "value": "[parameters('sqlServerPassword')]"
+          },
 
-        "sqlServerVersion": {
-          "value": "[parameters('sqlServerVersion')]"
-        },
-        "sqlDatabaseCollation": {
-          "value": "[parameters('sqlDatabaseCollation')]"
-        },
+          "sqlServerVersion": {
+            "value": "[parameters('sqlServerVersion')]"
+          },
+          "sqlDatabaseCollation": {
+            "value": "[parameters('sqlDatabaseCollation')]"
+          },
 
-        "coreSqlDatabaseName": {
-          "value": "[parameters('coreSqlDatabaseName')]"
-        },
-        "masterSqlDatabaseName": {
-          "value": "[parameters('masterSqlDatabaseName')]"
-        },
-        "webSqlDatabaseName": {
-          "value": "[parameters('webSqlDatabaseName')]"
-        },
-        "reportingSqlDatabaseName": {
-          "value": "[parameters('reportingSqlDatabaseName')]"
-        },
-        "poolsSqlDatabaseName": {
-          "value": "[parameters('poolsSqlDatabaseName')]"
-        },
-        "tasksSqlDatabaseName": {
-          "value": "[parameters('tasksSqlDatabaseName')]"
-        },
-        "formsSqlDatabaseName": {
-          "value": "[parameters('formsSqlDatabaseName')]"
-        },
+          "coreSqlDatabaseName": {
+            "value": "[parameters('coreSqlDatabaseName')]"
+          },
+          "masterSqlDatabaseName": {
+            "value": "[parameters('masterSqlDatabaseName')]"
+          },
+          "webSqlDatabaseName": {
+            "value": "[parameters('webSqlDatabaseName')]"
+          },
+          "reportingSqlDatabaseName": {
+            "value": "[parameters('reportingSqlDatabaseName')]"
+          },
+          "poolsSqlDatabaseName": {
+            "value": "[parameters('poolsSqlDatabaseName')]"
+          },
+          "tasksSqlDatabaseName": {
+            "value": "[parameters('tasksSqlDatabaseName')]"
+          },
+          "formsSqlDatabaseName": {
+            "value": "[parameters('formsSqlDatabaseName')]"
+          },
 
-        "searchServiceName": {
-          "value": "[parameters('searchServiceName')]"
-        },
-        "redisCacheName": {
-          "value": "[parameters('redisCacheName')]"
-        },
-        "applicationInsightsName": {
-          "value": "[parameters('applicationInsightsName')]"
-        },
-        "applicationInsightsLocation": {
-          "value": "[parameters('applicationInsightsLocation')]"
-        },
-        "applicationInsightsPricePlan": {
-          "value": "[parameters('applicationInsightsPricePlan')]"
-        },
+          "searchServiceName": {
+            "value": "[parameters('searchServiceName')]"
+          },
+          "redisCacheName": {
+            "value": "[parameters('redisCacheName')]"
+          },
+          "redisCacheSubnetID": {
+            "value": "[parameters('redisCacheSubnetID')]"
+          },
+          "applicationInsightsName": {
+            "value": "[parameters('applicationInsightsName')]"
+          },
+          "applicationInsightsLocation": {
+            "value": "[parameters('applicationInsightsLocation')]"
+          },
+          "applicationInsightsPricePlan": {
+            "value": "[parameters('applicationInsightsPricePlan')]"
+          },
 
-        "cmHostingPlanName": {
-          "value": "[parameters('cmHostingPlanName')]"
-        },
-        "cdHostingPlanName": {
-          "value": "[parameters('cdHostingPlanName')]"
-        },
-        "prcHostingPlanName": {
-          "value": "[parameters('prcHostingPlanName')]"
-        },
-        "repHostingPlanName": {
-          "value": "[parameters('repHostingPlanName')]"
-        },
+          "cmHostingPlanName": {
+            "value": "[parameters('cmHostingPlanName')]"
+          },
+          "cdHostingPlanName": {
+            "value": "[parameters('cdHostingPlanName')]"
+          },
+          "prcHostingPlanName": {
+            "value": "[parameters('prcHostingPlanName')]"
+          },
+          "repHostingPlanName": {
+            "value": "[parameters('repHostingPlanName')]"
+          },
 
-        "cmWebAppName": {
-          "value": "[parameters('cmWebAppName')]"
-        },
-        "cdWebAppName": {
-          "value": "[parameters('cdWebAppName')]"
-        },
-        "prcWebAppName": {
-          "value": "[parameters('prcWebAppName')]"
-        },
-        "repWebAppName": {
-          "value": "[parameters('repWebAppName')]"
-        },
-        "authCertificateName": {
-          "value": "[parameters('authCertificateName')]"
-        },
-        "authCertificateBlob": {
-          "value": "[parameters('authCertificateBlob')]"
-        },
-        "authCertificatePassword": {
-          "value": "[parameters('authCertificatePassword')]"
+          "cmWebAppName": {
+            "value": "[parameters('cmWebAppName')]"
+          },
+          "cdWebAppName": {
+            "value": "[parameters('cdWebAppName')]"
+          },
+          "prcWebAppName": {
+            "value": "[parameters('prcWebAppName')]"
+          },
+          "repWebAppName": {
+            "value": "[parameters('repWebAppName')]"
+          },
+          "authCertificateName": {
+            "value": "[parameters('authCertificateName')]"
+          },
+          "authCertificateBlob": {
+            "value": "[parameters('authCertificateBlob')]"
+          },
+          "authCertificatePassword": {
+            "value": "[parameters('authCertificatePassword')]"
+          }
         }
-      }
       }
     },
     {
