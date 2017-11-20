@@ -533,6 +533,9 @@
           "redisCacheSubnetName": {
             "value": "[parameters('redisCacheSubnetName')]"
           },
+          "virtualNetwork": {
+            "value": "[parameters('virtualNetwork')]"
+          },
           "applicationInsightsName": {
             "value": "[parameters('applicationInsightsName')]"
           },
