@@ -26,9 +26,6 @@
     "sqlServerPassword": {
       "value": "Welcome.1234"
     },
-    "redisCacheSubnetName": {
-      "value": "redis-ase-subnet"
-    },
     "cmMsDeployPackageUrl": {
       "value": "https://sitecoretest1234.blob.core.windows.net/sitecore90xp/Sitecore%209.0.0%20rev.%20171002%20(WDP%20XPScaled%20packages)/Sitecore%209.0.0%20rev.%20171002%20(Cloud)_cm.scwdp.zip?st=2017-11-09T08%3A08%3A00Z&se=2017-12-10T08%3A08%3A00Z&sp=rl&sv=2017-04-17&sr=c&sig=37vTJE%2FOMuFn7oYw3ub41yaR70PMnybEHPN22whzcIw%3D"
     },

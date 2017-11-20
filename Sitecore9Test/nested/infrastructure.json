@@ -1030,7 +1030,7 @@
         },
         "enableNonSslPort": false
       },
-      "subnet": "[parameters('redisCacheSubnetName')]",
+
       "tags": {
         "provider": "[variables('sitecoreTags').provider]"
       }
