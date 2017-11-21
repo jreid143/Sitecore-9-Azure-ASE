@@ -152,8 +152,7 @@
       "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
     },
     "redisCacheSubnetName": {
-      "type": "string",
-      "defaultValue": "redis-ase-subnet"
+      "type": "string"
     },
     "applicationInsightsName": {
       "type": "string",
