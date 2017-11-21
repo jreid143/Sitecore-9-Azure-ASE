@@ -8,6 +8,9 @@
     "location": {
       "value": "East US"
     },
+    "sitecoreSKU": {
+      "value": "Extras Small"
+    },
     "sitecoreAdminPassword": {
       "value": "Welcome.1234"
     },
