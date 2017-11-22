@@ -60,6 +60,13 @@
       "type": "string",
       "defaultValue": "sitecore-vnet"
     },
+    "virtualNetworkRGName": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Resource Group Name for Vnet. For new VNet leave it empty, otherwise type in existing resource group name"
+      }
+    },
     "location": {
       "type": "string",
       "minLength": 1,
@@ -1033,7 +1040,7 @@
         },
         "enableNonSslPort": false,
         "subnet": "[parameters('redisCacheSubnetName')]",
-        "virtualNetwork": "[parameters('virtualNetwork')]"
+        "virtualNetwork": "[parameters('virtualNetworkRGName')]"
       },
 
       "tags": {
