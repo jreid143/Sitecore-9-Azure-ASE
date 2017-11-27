@@ -9,7 +9,7 @@
       }
     ],
     "dependencies": "[concat(variables('defaultDependency'), parameters('modules').items)]",
-    "existingVNetId": "[resourceId(parameters('virtualNetworkRGName'),concat('Microsoft.Network','/','virtualNetworks'),parameters('virtualNetwork'))]"
+    "existingVNetId": "[resourceId(parameters('deploymentId'),concat('Microsoft.Network','/','virtualNetworks'),parameters('virtualNetwork'))]"
   },
   "parameters": {
     "modules": {
@@ -45,13 +45,6 @@
       "minLength": 1,
       "defaultValue": "[resourceGroup().location]"
     },
-    "virtualNetworkRGName": {
-      "type": "string",
-      "defaultValue": "",
-      "metadata": {
-        "description": "Resource Group Name for Vnet. For new VNet leave it empty, otherwise type in existing resource group name"
-      }
-    },
     "appServiceEnvironmentName": {
       "type": "string",
       "defaultValue": "sitecore-ase",
@@ -62,6 +55,10 @@
     "virtualNetwork": {
       "type": "string",
       "defaultValue": "sitecore-vnet"
+    },
+    "VNetID": {
+      "type": "string",
+      "defaultValue": "[variables('existingVNetId')]"
     },
     "sitecoreAdminPassword": {
       "type": "securestring",
@@ -488,8 +485,8 @@
           "appServiceEnvironmentName": {
             "value": "[parameters('appServiceEnvironmentName')]"
           },
-          "virtualNetworkRGName": {
-            "value": "[parameters('virtualNetworkRGName')]"
+          "VNetID": {
+            "value": "[parameters('VNetID')]"
           },
           "sitecoreSKU": {
             "value": "[parameters('sitecoreSKU')]"
