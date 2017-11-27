@@ -9,7 +9,7 @@
       }
     ],
     "dependencies": "[concat(variables('defaultDependency'), parameters('modules').items)]",
-    "existingVNetId": "[resourceId(parameters('deploymentId'),concat('Microsoft.Network','/','virtualNetworks'),parameters('virtualNetwork'))]"
+    "VNetId": "[resourceId(parameters('deploymentId'),concat('Microsoft.Network','/','virtualNetworks'),parameters('virtualNetwork'))]"
   },
   "parameters": {
     "modules": {
@@ -55,10 +55,6 @@
     "virtualNetwork": {
       "type": "string",
       "defaultValue": "sitecore-vnet"
-    },
-    "VNetID": {
-      "type": "string",
-      "defaultValue": "[variables('existingVNetId')]"
     },
     "sitecoreAdminPassword": {
       "type": "securestring",
@@ -486,7 +482,7 @@
             "value": "[parameters('appServiceEnvironmentName')]"
           },
           "VNetID": {
-            "value": "[parameters('VNetID')]"
+            "value": "[variables('VNetID')]"
           },
           "sitecoreSKU": {
             "value": "[parameters('sitecoreSKU')]"
