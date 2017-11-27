@@ -67,6 +67,7 @@
         "description": "Existing VNet for the environment"
       }
     },
+
     "location": {
       "type": "string",
       "minLength": 1,
@@ -158,7 +159,7 @@
       "minLength": 1,
       "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
     },
-    "redisCacheSubnetName": {
+    "redisCacheSubnetID": {
       "type": "string"
     },
     "applicationInsightsName": {
@@ -1039,8 +1040,7 @@
           "capacity": "[parameters('resourceSizes').redisCache.SkuCapacity]"
         },
         "enableNonSslPort": false,
-        "subnet": "[parameters('redisCacheSubnetName')]",
-        "virtualNetwork": "[parameters('VNetID')]"
+        "subnetID": "[parameters('redisCacheSubnetID')]"
       },
 
       "tags": {
