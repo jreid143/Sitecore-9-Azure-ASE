@@ -162,6 +162,9 @@
     "redisCacheSubnetID": {
       "type": "string"
     },
+    "redisCacheSubnetName": {
+      "type": "string"
+    },
     "applicationInsightsName": {
       "type": "string",
       "minLength": 1,
