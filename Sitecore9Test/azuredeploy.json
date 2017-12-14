@@ -47,14 +47,14 @@
     },
     "appServiceEnvironmentName": {
       "type": "string",
-      "defaultValue": "hum-sitecore-ase",
+      "defaultValue": "sitecore9-ase-ilb",
       "metadata": {
         "description": "The name of the App Service Environment where the app service plan will be created."
       }
     },
     "virtualNetwork": {
       "type": "string",
-      "defaultValue": "sitecore-vnet"
+      "defaultValue": "sitecore9-ase-ilb-vnet"
     },
     "redisCacheSubnet": {
       "type": "string",
@@ -71,7 +71,7 @@
     "sitecoreSKU": {
       "type": "string",
       "allowedValues": [ "Extra Small", "Small", "Medium", "Large", "Extra Large" ],
-      "defaultValue": "Extra Small",
+      "defaultValue": "Large",
       "metadata": {
         "description": "Sitecore SKU controls the sizes and service levels of the provisioned resources"
       }
